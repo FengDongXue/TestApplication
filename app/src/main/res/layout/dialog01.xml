@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="首次使用请先登录设备"
+            android:layout_marginBottom="7dp"
+            android:textColor="#88b1e1"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="8dp"
+            android:background="#c7c7c7" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容"
+            android:textColor="#4f4f4f" />
+
+        <Button
+            android:id="@+id/single"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:text="立即绑定"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
