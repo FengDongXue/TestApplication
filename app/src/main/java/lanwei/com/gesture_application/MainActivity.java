@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,12 +35,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gesture_layout);
 
         container = (FrameLayout) findViewById(R.id.container);
         mLockIndicator = (LockIndicator) findViewById(R.id.lock_indicator);
         mTextTip = (TextView) findViewById(R.id.mTextTip);
         mTextReset = (TextView) findViewById(R.id.text_reset);
+
 
         // 初始化一个显示各个点的viewGroup
         mGestureContentView = new GestureContentView(this, false, "", new GestureDrawline.GestureCallBack() {

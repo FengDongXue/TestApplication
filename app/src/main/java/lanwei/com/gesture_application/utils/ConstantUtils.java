@@ -5,8 +5,9 @@ package lanwei.com.gesture_application.utils;
  */
 
 public class ConstantUtils {
+            public final static String URL = "http://123.57.238.38/json/";
 //            public final static String URL = "http://121.42.29.226/json/";
-    public final static String URL = "http://47.92.80.23/json/";
+//    public final static String URL = "http://47.92.80.23/json/";
 //    public final static String URL = "http://www.govstar.gov.cn/json/";
 
 

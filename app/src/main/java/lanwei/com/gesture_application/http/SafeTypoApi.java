@@ -2,7 +2,9 @@ package lanwei.com.gesture_application.http;
 
 import com.google.gson.JsonObject;
 
+import lanwei.com.gesture_application.bean.Beans_Return;
 import retrofit2.Call;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
@@ -50,6 +52,12 @@ public interface SafeTypoApi {
     //验证手机是否被锁定
     @POST("security?action=locking")
     Call<JsonObject> locking(@Query("mobile") String mobile, @Query("imei") String imei);
+
+    /**
+     * 发布公告通知接收者
+     */
+    @GET("mobile?action=getReceiveAcc")
+    Call<Beans_Return> receivers_notification(@Query("deptId") String deptId);
 
 
 }

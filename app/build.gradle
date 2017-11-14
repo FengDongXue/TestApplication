@@ -25,7 +25,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.3.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 
     // 网络模块-Retrofit
@@ -38,4 +37,11 @@ dependencies {
     compile 'com.zhy:autolayout:1.4.5'
     //AutoLayoutActivity
     compile files('libs/MobileToken.jar')
+
+    // butterknife
+    compile 'com.jakewharton:butterknife:5.1.1'
+
+
+     // 富文本
+    compile 'com.leo.extendedittext:library:0.1.1'
 }
