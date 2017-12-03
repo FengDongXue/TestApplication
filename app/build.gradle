@@ -44,4 +44,9 @@ dependencies {
 
      // 富文本
     compile 'com.leo.extendedittext:library:0.1.1'
+
+    // rxjava 和 rxandroid
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+
 }
